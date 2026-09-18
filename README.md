@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/pySerial-20232A?style=for-the-badge" alt="pySerial" />
 </p>
 
-## 🇬🇧 Overview
+## Overview
 
 A Wi-Fi communication layer between ESP32-based robots and a ground station. Robots send telemetry and the ground
 station sends commands over TCP, on top of which a small reliability protocol runs: stop-and-wait ARQ with ACK/NACK,
@@ -18,7 +18,7 @@ the firmware inject faults (dropped ACKs or commands, corrupted CRCs) for a 20-c
 
 **Quick start:** `bash kurulum_ubuntu.sh && bash yukle_server.sh /dev/ttyUSB0 && python3 ground_station.py`
 
-## 🇹🇷 Proje hakkında
+## Proje hakkında
 
 ESP32 tabanlı robotlarla yer istasyonu arasında Wi-Fi üzerinden çalışan bir haberleşme katmanı. Robotlar telemetri,
 yer istasyonu komut gönderir. TCP üzerinde güvenilirliği sağlayan küçük bir protokol çalışır.
@@ -31,7 +31,7 @@ yer istasyonu komut gönderir. TCP üzerinde güvenilirliği sağlayan küçük 
 
 <p align="center"><img src="docs/donanim.jpg" width="320" alt="Server ve client olarak çalışan iki ESP32-S3 geliştirme kartı" /></p>
 
-## ✨ Özellikler
+## Özellikler
 
 - **Mesaj formatı:** tek satır JSON, `{"id","seq","type","crc","payload"}`. Tipler: `DATA`, `CMD`, `ACK`, `NACK`,
   `PING`, `PONG`.
@@ -48,7 +48,7 @@ yer istasyonu komut gönderir. TCP üzerinde güvenilirliği sağlayan küçük 
 Ayrıntılar: [`PROTOKOL.md`](PROTOKOL.md) (protokol), [`DURUM_MAKINESI.md`](DURUM_MAKINESI.md) (durum makineleri),
 [`TEST_PLANI.md`](TEST_PLANI.md) (T01–T20 test senaryoları).
 
-## ⚙️ Kurulum ve çalıştırma (Ubuntu 22.04)
+## Kurulum ve çalıştırma (Ubuntu 22.04)
 
 **1. Kurulum** (ilk kez): `pyserial`, `arduino-cli`, ESP32 kart paketi ve Adafruit NeoPixel kütüphanesini kurar.
 
@@ -111,7 +111,7 @@ sudo usermod -aG dialout $USER
 newgrp dialout      # ya da oturumu kapatıp açın
 ```
 
-## 📁 Dosya yapısı
+## Dosya yapısı
 
 ```text
 ESP32SPIDER/
@@ -131,7 +131,7 @@ ESP32SPIDER/
 └── TEST_PLANI.md           test planı (T01–T20)
 ```
 
-## 📝 Notlar
+## Notlar
 
 - `arsiv/` klasöründeki kodlar güncel protokolle uyumlu değildir, yalnızca referans içindir (bkz.
   [`arsiv/README.md`](arsiv/README.md)).
