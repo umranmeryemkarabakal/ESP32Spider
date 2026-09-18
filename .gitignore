@@ -1,0 +1,23 @@
+# Ağ bilgileri (örnek: */secrets.example.h)
+secrets.h
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Çalışma çıktıları
+log_*.txt
+build/
+
+# Yerel notlar ve araç çıktıları
+*.docx
+*.resolved
+Screenshot*.png
+
+# Editör ve işletim sistemi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
